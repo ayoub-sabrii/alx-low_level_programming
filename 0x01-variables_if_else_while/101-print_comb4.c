@@ -8,32 +8,26 @@
 
 int main(void)
 {
-	int a = '0';
+	int a;
 	int b;
 	int c;
 
-	while (a <= '7')
+	for (a = 0; a < 8; a++)
 	{
-		b = a + 1;
-		while (b <= '8')
+		for (b = a + 1; b < 9; c++)
 		{
-			c = b + 1;
-			while (c <= '9')
+			for (c = b + 1; c < 10; c++)
 			{
-				if (c > b && b > a)
-				putchar(a + '0');
-				putchar(b + '0');
-				putchar(c + '0');
-				if (a != '7' || b != '8')
-				{
-					putchar(',');
-					putchar(' ');
-				}
-				c++;
+				putchar((a % 10) + '0');
+				putchar((b % 10) + '0');
+				putchar((c % 10) + '0');
+
+				if (a == 7 && b == 8 && c == 9)
+					continue;
+				putchar(',');
+				putchar(' ');
 			}
-			b++;
 		}
-		a++;
 	}
 	putchar('\n');
 	return (0);
