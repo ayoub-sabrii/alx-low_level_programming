@@ -20,10 +20,11 @@ int main(void)
 			c = b + 1;
 			while (c <= '9')
 			{
-				putchar(a);
-				putchar(b);
-				putchar(c);
-				if (c != '9' || b != '8')
+				if (c > b && b > a)
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(c + '0');
+				if (c != '7' || b != '8')
 				{
 					putchar(',');
 					putchar(' ');
