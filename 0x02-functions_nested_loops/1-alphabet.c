@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_alphabet - print alphabet 
+ * print_alphabet - print alphabet
  */
 
-void prin_alphabet(void)
+void print_alphabet(void)
 {
 	char letter;
 
