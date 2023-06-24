@@ -3,7 +3,7 @@
 /**
  * main - check the code.
  *
- * print_alphabet - void print_alphabet_x10(void)
+ * print_alphabet: void print_alphabet_x10(void)
  *
  * Return: Always 0.
  */
@@ -19,7 +19,6 @@ void print_alphabet_x10(void)
 		{
 			_putchar(letters);
 		}
-		_putchar("\n");
+		_putchar('\n');
 	}
-	Return(0);
 }
