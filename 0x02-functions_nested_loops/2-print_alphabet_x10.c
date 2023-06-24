@@ -3,10 +3,12 @@
 /**
  * main - check the code.
  *
+ * print_alphabet - void print_alphabet_x10(void)
+ *
  * Return: Always 0.
  */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	int i;
 	char letters;
@@ -15,7 +17,7 @@ void print_alphabet_x10(void);
 	{
 		for (letters = 'a'; letters <= 'z'; letters++)
 		{
-			_putchar("%c", letters);
+			_putchar(letters);
 		}
 		_putchar("\n");
 	}
