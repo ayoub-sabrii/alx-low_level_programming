@@ -3,7 +3,7 @@
 /**
  * reset_to_98 - take pointers
  *
- * @n; input
+ * @n: input
  *
  * Return: n
  */
@@ -11,4 +11,4 @@
 void reset_to_98(int *n)
 {
 	*n = 98;
-}
+i}
