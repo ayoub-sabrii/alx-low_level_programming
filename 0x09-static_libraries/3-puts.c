@@ -1,10 +1,19 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
 
-void _puts(char *s)
+/**
+ * _puts - a function that prints a string
+ *
+ * @str: string parameter
+ *
+ * Return: Nothing
+ */
+
+void _puts(char *str)
 {
-    puts(s);
+	while (*str != '\0')
+	{
+		_putchar(*str + 0);
+		str++;
+	}
+	_putchar('\n');
 }
